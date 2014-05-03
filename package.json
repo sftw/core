@@ -1,0 +1,24 @@
+{
+  "name": "SFTW",
+  "version": "0.0.1",
+  "description": "SFTW",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sftw/core.git"
+  },
+  "author": "Joshua Jenkins & John Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sftw/core/issues"
+  },
+  "homepage": "https://github.com/sftw/core",
+  "dependencies": {
+    "gulp": "^3.6.2",
+    "gulp-sass": "^0.7.1",
+    "gulp-minify-css": "^0.3.4"
+  }
+}

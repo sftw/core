@@ -1,0 +1,71 @@
+@import 'normalize';
+
+$grey: #ccc;
+$gold: #eba90a;
+
+/* Branding colors */
+$twitter: #55acee;
+$pinterest: #cc2127;
+$facebook: #3b5998;
+$snapchat: #fffc00;
+
+body {
+  background-color: #fff;
+  font-size: 62.5%;
+  font-family: 'Helvetica Neue', 'Helvetica', 'sans-serif';
+}
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 3rem;
+  padding: 0;
+
+  span {
+    border-bottom: 2px solid $grey;
+    padding-bottom: 0.5rem;
+  }
+}
+
+#element {
+  display: block;
+  text-align: center;
+}
+
+footer {
+  margin: 10rem 0 0 0;
+  background-color: darken($grey, 50%);
+  min-height: 500px;
+}
+
+#social-media {
+  margin: 0 0 1% 1%;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+
+  li {
+    padding: 0;
+    height: 300px;
+    box-sizing: border-box;
+    width: 24%;
+    margin: 1% 1% 0 0;
+    float: left;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: 150;
+    font-size: 2rem;
+    border: 2px solid transparent;
+
+    &.twitter   { border-color: $twitter; }
+    &.pinterest { border-color: $pinterest; }
+    &.facebook  { border-color: $facebook; }
+    &.snapchat  { border-color: $snapchat; }
+  }
+}
