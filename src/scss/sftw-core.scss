@@ -187,19 +187,10 @@ h3 {
     padding: 0;
 
     & > section {
-      width: 40%;
+      width: 33.3%;
       float: left;
-
-      &:first-child {
-        padding-right: 10%;
-      }
-      &:nth-child(2) {
-        width: 20%;
-        text-align: center;
-      }
-      &:nth-child(3) {
-        padding-left: 10%;
-      }
+      padding: 0 2%;
+      text-align: center;
     }
   }
 
