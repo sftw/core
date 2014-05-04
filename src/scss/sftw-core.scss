@@ -59,7 +59,9 @@ h3 {
 }
 
 #knowledge {
-  max-width: 80%;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 4%;
   margin: 80px auto;
   overflow: hidden;
 
@@ -79,18 +81,12 @@ h3 {
   }
 
   & > section {
-    width: 40%;
-    float: left;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto $baseline*2 auto;
 
-    &:first-child {
-      padding-right: 10%;
-    }
-    &:nth-child(2) {
-      width: 20%;
-      text-align: center;
-    }
-    &:nth-child(3) {
-      padding-left: 10%;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -125,7 +121,7 @@ h3 {
     margin: 0 auto;
     padding: 0;
     list-style: none;
-    width: 400px;
+    width: 320px;
   }
 
   li {
@@ -134,7 +130,7 @@ h3 {
     float: left;
 
     &:nth-child(2) {
-      width: 240px;
+      width: 160px;
       text-align: center;
 
       a:link,
@@ -163,17 +159,16 @@ h3 {
     box-sizing: border-box;
     background-color: $cream;
     margin: 0 auto;
-    width: 600px;
+    width: 200px;
     border-radius: 2px;
     overflow: hidden;
 
     & > div {
       width: 200px;
-      border-right: 1px solid $blue;
+      border-bottom: 1px solid $blue;
       text-align: center;
       height: 58px;
       padding: $baseline/2;
-      float: left;
       margin: 0;
 
       &:last-child {
@@ -183,6 +178,39 @@ h3 {
       &.facebook {
         padding-top: ($baseline/2) + .5;
       }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  #knowledge {
+    padding: 0;
+
+    & > section {
+      width: 40%;
+      float: left;
+
+      &:first-child {
+        padding-right: 10%;
+      }
+      &:nth-child(2) {
+        width: 20%;
+        text-align: center;
+      }
+      &:nth-child(3) {
+        padding-left: 10%;
+      }
+    }
+  }
+
+  #social-hell .container {
+
+    width: 600px;
+
+    & > div {
+      float: left;
+      border-bottom: none;
+      border-right: 1px solid $blue;
     }
   }
 }
