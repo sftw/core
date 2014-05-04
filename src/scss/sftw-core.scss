@@ -154,3 +154,35 @@ h3 {
     }
   }
 }
+
+#social-hell {
+  background: linear-gradient(to right, $purple 0%, $blue 100%);
+  padding: 0 0 50px 0;
+
+  .container {
+    box-sizing: border-box;
+    background-color: $cream;
+    margin: 0 auto;
+    width: 600px;
+    border-radius: 2px;
+    overflow: hidden;
+
+    & > div {
+      width: 200px;
+      border-right: 1px solid $blue;
+      text-align: center;
+      height: 58px;
+      padding: $baseline/2;
+      float: left;
+      margin: 0;
+
+      &:last-child {
+        border: none;
+      }
+
+      &.facebook {
+        padding-top: ($baseline/2) + .5;
+      }
+    }
+  }
+}
