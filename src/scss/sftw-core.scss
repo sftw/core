@@ -161,7 +161,7 @@ h3 {
 
   .container {
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: $cream;
     margin: 0 auto;
     width: 600px;
     border-radius: 2px;
@@ -175,6 +175,14 @@ h3 {
       padding: $baseline/2;
       float: left;
       margin: 0;
+
+      &:last-child {
+        border: none;
+      }
+
+      &.facebook {
+        padding-top: ($baseline/2) + .5;
+      }
     }
   }
 }
