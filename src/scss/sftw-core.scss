@@ -133,31 +133,24 @@ h3 {
       width: 160px;
       text-align: center;
 
-      a:link,
-      a:visited {
+      p {
         color: $cream;
         font-size: $font-small;
-        text-decoration: none;
-        border-bottom: 1px solid $cream;
+        font-weight: 300;
         line-height: $baseline;
-
-        transition: color 0.3s linear;
-      }
-
-      a:hover {
-        color: white;
+        margin: 0;
+        padding: 0;
       }
     }
   }
 }
 
 #social-hell {
-  background: linear-gradient(to right, $purple 0%, $blue 100%);
-  padding: 0 0 50px 0;
+  //background: linear-gradient(to right, $purple 0%, $blue 100%);
+  padding: 50px 0;
 
   .container {
     box-sizing: border-box;
-    background-color: $cream;
     margin: 0 auto;
     width: 200px;
     border-radius: 2px;
@@ -165,20 +158,37 @@ h3 {
 
     & > div {
       width: 200px;
-      border-bottom: 1px solid $blue;
-      text-align: center;
       height: 58px;
       padding: $baseline/2;
       margin: 0;
-
-      &:last-child {
-        border: none;
-      }
 
       &.facebook {
         padding-top: ($baseline/2) + .5;
       }
     }
+  }
+}
+
+#attribution {
+  padding: 0 0 40px 0;
+
+  p {
+    font-size: $font-small;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  a:link, a:visited {
+    color: $purple;
+    border-bottom: 1px solid $blue;
+    text-decoration: none;
+
+    transition: color 0.3s linear, border-color 0.3s linear;
+  }
+
+  a:hover {
+    color: $blue;
+    border-color: $purple;
   }
 }
 
@@ -200,8 +210,7 @@ h3 {
 
     & > div {
       float: left;
-      border-bottom: none;
-      border-right: 1px solid $blue;
+      text-align: center;
     }
   }
 }
