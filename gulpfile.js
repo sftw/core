@@ -13,4 +13,10 @@ gulp.task('watch', function() {
   gulp.watch('src/scss/*.scss', ['sass']);
 });
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('dev-server', function(next) {
+  var connect = require('connect'),
+    server = connect();
+  server.use(connect.static('./')).listen(process.env.PORT || 3000, next);
+});
+
+gulp.task('default', ['sass', 'watch', 'dev-server']);
