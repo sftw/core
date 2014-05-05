@@ -93,13 +93,26 @@ h3 {
   .payme-pro {
     margin: $baseline 0 0 0;
 
+    form {
+      height: $baseline*2;
+    }
+
     .charity-case {
-      margin: $baseline 0 0 0;
+      margin: 0;
       font-size: $font-small;
       color: lighten($grey, 20%);
       font-style: italic;
       font-weight: 400;
-      line-height: $baseline/1.5;
+      line-height: $baseline;
+    }
+  }
+
+  .testimonial {
+    font-style: italic;
+
+    span {
+      font-style: normal;
+      display: block;
     }
   }
 }
