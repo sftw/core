@@ -92,6 +92,15 @@ h3 {
 
   .payme-pro {
     margin: $baseline 0 0 0;
+
+    .charity-case {
+      margin: $baseline 0 0 0;
+      font-size: $font-small;
+      color: lighten($grey, 20%);
+      font-style: italic;
+      font-weight: 400;
+      line-height: $baseline/1.5;
+    }
   }
 }
 
@@ -201,14 +210,20 @@ h3 {
     padding: 0;
 
     & > section {
-      width: 33.3%;
+      box-sizing: border-box;
+      width: 33.33%;
       float: left;
-      padding: 0 2%;
-      text-align: center;
+      padding: 0 2.5%;
+      //text-align: center;
+
+      &:nth-child(2),
+      &:nth-child(5) {
+        text-align: center;
+      }
     }
 
     .payme-pro {
-      text-align: center;
+      //text-align: center;
     }
   }
 
